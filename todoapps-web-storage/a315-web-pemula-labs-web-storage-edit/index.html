@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Aplikasi Pengelolaan Data Buku</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://kit.fontawesome.com/e87fbf4ec0.css" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/e87fbf4ec0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+  <h1>Aplikasi Pengelolaan Data Buku</h1>
+</header>
+ 
+<div class="wrapper">
+  <div class="container bg-white shadow" id="add-todo">
+    <h2 class="container-header text-center">Masukkan data Buku</h2>
+    <form class="form" action="#" id="form">
+      <div class="form-group form-title">
+        <label for="title">Nama Penulis</label>
+        <input type="text" id="title" name="penulis" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="tahun">Tahun terbit</label>
+        <input type="number" id="tahun" name="tahun" min="1900" max="2099" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="title">Judul Buku</label>
+        <input type="text" id="judul" name="judul" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="kota-terbit">Kota terbit</label>
+        <input type="text" id="kota-terbit" name="kota-terbit" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="penerbit">Penerbit Buku</label>
+        <input type="text" id="penerbit" name="penerbit" required>
+      </div>
+      <div class="form-group form-title">
+        <label for="tahun">Masukkan tanggal selesai pinjam</label>
+        <input type="date" id="date" name="date" required>
+      <input type="submit" value="Submit" name="Submit" class="btn-submit">
+    </form>
+  <div class="container">
+    <h2 class="container-header"><i class="fa-solid fa-book"></i> Belum dibaca</h2>
+    <div class="list-item" id="todos">
+    </div>
+  </div>
+  
+  <div class="container">
+    <h2 class="container-header"><i class="fa-solid fa-book"></i> Sudah dibaca</h2>
+    <div class="list-item" id="completed-todos">
+    </div>
+  </div>
+</div>
+ 
+<script src="js/script.js" type="text/javascript"></script>
+ 
+</body>
+</html>
